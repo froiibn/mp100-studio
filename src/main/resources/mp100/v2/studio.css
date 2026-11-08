@@ -1,0 +1,171 @@
+.app {
+    -fx-background-color: #111316;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 13px;
+    -studio-accent: #7eadd2;
+    -studio-accent-bright: #acd0ed;
+    -studio-accent-surface: #263846;
+}
+
+.label { -fx-text-fill: #ececf0; }
+.muted { -fx-text-fill: #a3a7af; }
+.studio-header {
+    -fx-background-color: linear-gradient(to bottom, #1c1f24, #16181c);
+    -fx-border-color: transparent transparent #2c3036 transparent;
+    -fx-padding: 0 24;
+    -fx-min-height: 74;
+    -fx-pref-height: 74;
+}
+.brand-title { -fx-font-size: 24px; -fx-font-weight: bold; }
+.eyebrow { -fx-font-size: 11px; -fx-font-weight: bold; -fx-text-fill: -studio-accent; }
+.format-pill {
+    -fx-background-color: #1a1d21;
+    -fx-background-radius: 5;
+    -fx-border-color: #353940;
+    -fx-border-radius: 5;
+    -fx-padding: 6 10;
+    -fx-text-fill: #b6b9c1;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.panel {
+    -fx-background-color: #1b1e22;
+    -fx-background-radius: 9;
+    -fx-border-color: #33373e;
+    -fx-border-radius: 9;
+    -fx-padding: 18;
+}
+.section-title { -fx-font-size: 20px; -fx-font-weight: bold; }
+.empty-title { -fx-font-size: 16px; -fx-font-weight: bold; }
+.track-title { -fx-font-size: 20px; -fx-font-weight: bold; }
+
+.artwork {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 73%, #27292d, #131517);
+    -fx-background-radius: 6;
+    -fx-border-color: #34373b;
+    -fx-border-radius: 6;
+    -fx-padding: 12;
+}
+.disc-face { -fx-fill: #1a1c20; -fx-stroke: #526b7e; }
+.disc-groove { -fx-fill: transparent; -fx-stroke: #323a43; }
+.monitor-signal {
+    -fx-fill: transparent;
+    -fx-stroke: -studio-accent;
+    -fx-stroke-width: 2;
+    -fx-stroke-line-cap: round;
+    -fx-stroke-line-join: round;
+}
+.monitor-label, .meter-tick, .meter-channel, .clock {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 11px;
+}
+.monitor-label { -fx-text-fill: #9aabb8; }
+.format-value { -fx-text-fill: #d5e0eb; -fx-font-size: 11px; }
+.meter-bank {
+    -fx-background-color: #16181c;
+    -fx-background-radius: 5;
+    -fx-border-color: #303338;
+    -fx-border-radius: 5;
+    -fx-padding: 8 9 9 9;
+}
+.meter-tick { -fx-text-fill: #9b9fa7; -fx-font-size: 10px; }
+.meter-channel { -fx-text-fill: #bbbfc6; -fx-min-width: 10; }
+.meter-segment {
+    -fx-background-color: #343940;
+    -fx-background-radius: 1;
+    -fx-pref-width: 6;
+    -fx-pref-height: 8;
+}
+.meter-segment:lit { -fx-background-color: -studio-accent; }
+.meter-segment.meter-high:lit { -fx-background-color: #ee8a61; }
+
+.icon-button {
+    -fx-background-insets: 0;
+    -fx-background-radius: 6;
+    -fx-border-color: transparent;
+    -fx-border-radius: 6;
+    -fx-min-width: 36;
+    -fx-min-height: 36;
+    -fx-alignment: center;
+    -fx-padding: 8;
+    -fx-cursor: hand;
+}
+.icon-button:disabled { -fx-opacity: 0.47; }
+.icon-button:focused { -fx-border-color: -studio-accent-bright; }
+.primary-button { -fx-background-color: -studio-accent; }
+.primary-button:hover { -fx-background-color: -studio-accent-bright; }
+.secondary-button { -fx-background-color: #262a30; }
+.secondary-button:hover { -fx-background-color: #373d45; }
+.add-button { -fx-background-color: -studio-accent-surface; }
+.add-button:hover { -fx-background-color: #354c5e; }
+.button-glyph { -fx-fill: #e8e9ed; }
+.primary-button .button-glyph { -fx-fill: #131d28; }
+.add-button .button-glyph { -fx-fill: -studio-accent-bright; }
+.tooltip { -fx-background-color: #2a2d32; -fx-text-fill: #f2f2f4; }
+
+.table-view {
+    -fx-background-color: #16181b;
+    -fx-background-insets: 0;
+    -fx-background-radius: 6;
+    -fx-border-color: #33373d;
+    -fx-border-radius: 6;
+    -fx-padding: 1;
+    -fx-fixed-cell-size: 35;
+    -fx-table-cell-border-color: transparent;
+}
+.table-view:drop-ready { -fx-border-color: -studio-accent; }
+.table-view .column-header-background {
+    -fx-background-color: #23262c;
+    -fx-background-radius: 5 5 0 0;
+    -fx-padding: 5 0;
+}
+.table-view .column-header, .table-view .filler { -fx-background-color: transparent; }
+.table-view .column-header .label {
+    -fx-alignment: center-left;
+    -fx-padding: 0 0 0 12;
+    -fx-text-fill: #acb1b9;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+.table-view .table-row-cell { -fx-background-color: #16181b; -fx-background-insets: 0; }
+.table-view .table-row-cell:odd:filled { -fx-background-color: #191c20; }
+.table-view .table-row-cell:filled:hover { -fx-background-color: #252930; }
+.table-view .table-row-cell:filled:selected { -fx-background-color: #2b3744; }
+.table-view .table-row-cell:drop-before {
+    -fx-border-color: -studio-accent transparent transparent transparent;
+    -fx-border-width: 2 0 0 0;
+}
+.table-view .table-row-cell:drop-after {
+    -fx-border-color: transparent transparent -studio-accent transparent;
+    -fx-border-width: 0 0 2 0;
+}
+.table-view .table-row-cell:active-track .table-cell { -fx-text-fill: -studio-accent-bright; -fx-font-weight: bold; }
+.table-view .table-cell {
+    -fx-alignment: center-left;
+    -fx-border-color: transparent;
+    -fx-text-fill: #e5e6eb;
+    -fx-padding: 0 12;
+}
+.table-view .scroll-bar { -fx-background-color: #17191d; }
+.table-view .scroll-bar .thumb { -fx-background-color: #4b5159; }
+
+.transport { -fx-background-color: #202329; -fx-padding: 12 16; }
+.state-chip {
+    -fx-background-color: #30343a;
+    -fx-background-radius: 5;
+    -fx-padding: 5 8;
+    -fx-text-fill: #c9ccd2;
+    -fx-font-size: 11px;
+}
+.state-chip:running { -fx-background-color: -studio-accent-surface; -fx-text-fill: -studio-accent-bright; }
+.state-chip:fault { -fx-background-color: #48302d; -fx-text-fill: #f5b7a7; }
+.clock { -fx-text-fill: #d6d9df; -fx-min-width: 34; }
+.slider .track { -fx-background-color: #3b4048; -fx-background-radius: 3; -fx-pref-height: 5; }
+.slider .track-fill { -fx-background-color: -studio-accent; -fx-background-radius: 3; }
+.slider .thumb {
+    -fx-background-color: -studio-accent;
+    -fx-background-insets: 0;
+    -fx-padding: 6;
+}
+.slider:focused .thumb { -fx-effect: dropshadow(gaussian, -studio-accent, 6, 0.25, 0, 0); }
